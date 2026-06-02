@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Forge",
+    "slug": "forge-pm",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.forge.pm",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Forge uses your camera to attach photos to tasks and notes, and to scan handwritten notes.",
+        "NSPhotoLibraryUsageDescription": "Forge uses your photo library to attach images to tasks and notes.",
+        "NSPhotoLibraryAddUsageDescription": "Forge saves captured photos to your photo library."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
+      "package": "com.forge.pm"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Forge uses your camera to attach photos to tasks and notes, and to scan handwritten notes."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Forge uses your photo library to attach images to tasks and notes."
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
