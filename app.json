@@ -17,17 +17,14 @@
       "infoPlist": {
         "NSCameraUsageDescription": "Forge uses your camera to attach photos to tasks and notes, and to scan handwritten notes.",
         "NSPhotoLibraryUsageDescription": "Forge uses your photo library to attach images to tasks and notes.",
-        "NSPhotoLibraryAddUsageDescription": "Forge saves captured photos to your photo library."
+        "NSPhotoLibraryAddUsageDescription": "Forge saves captured photos to your photo library.",
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
-      "package": "com.forge.pm"
-    },
+  "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
+  "package": "com.forge.pm"
+},
     "plugins": [
       [
         "expo-camera",
@@ -44,6 +41,11 @@
     ],
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c1037092-342b-42e0-a1ea-6753ef934bc8"
+      }
     }
   }
 }
